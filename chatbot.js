@@ -77,3 +77,20 @@ mic.addEventListener("click", function(){
     recognition.start();
     console.log("Activated");
 })
+function getResponse() {
+    let userText = $("#textInput").val();
+
+    if (userText == "") {
+        userText = "I love Code Palace!";
+    }
+}
+let userHtml = '<p class="userText"><span>' + userText + '</span></p>';
+
+$("#textInput").val("");
+$("#chatbox").append(userHtml);
+document.getElementById("chat-bar-bottom").scrollIntoView(true);
+
+setTimeout(() => {
+    getHardResponse(userText);
+}, 1000)
+var collection = document.getElementById("reply").value;

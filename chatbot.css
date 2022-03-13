@@ -155,3 +155,36 @@ header {
     border-left: 20px solid #466EB6;
     border-top: 20px solid transparent;
     border-bottom: 0px solid transparent;
+}
+.input{
+    height:20%;
+    border-radius:32px;
+    margin:8px 16px;
+    box-shadow:inset 0 0px 0 #777;
+    margin-left: 550px;
+    margin-top: 320px;
+    position: fixed;
+}
+#msg_send{
+    outline:none;
+    font-size:25px;
+    padding:0 16px;
+    border-radius:32px 0 32px 32px;
+    background:#ececee;
+    color:#333;
+    border:solid 1px #777;
+    border-right:none;
+}
+.send{
+    outline:none;
+    font-size:25px;
+    border:none;
+    background:#1c1f46;
+    border-radius:32px;
+    color:#eee;
+    transition-duration:0.2s;
+
+}
+.fa-solid .fa-paper-plane{
+    color: #ff3b3b;
+}
